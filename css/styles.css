@@ -1,0 +1,175 @@
+body{
+  margin: 0;
+  text-align: center;
+  font-family: 'Merriweather', serif;
+}
+
+h1{
+margin-top: 0;
+font-family: 'Sacramento', cursive;
+font-size: 5.625rem;/* em= 90 px/16px*/
+color: #66BFBF;
+line-height: 1;
+}
+
+h2{
+  font-family: 'Montserrat', sans-serif;
+  color: #66BFBF;
+}
+
+h3{
+  font-family: 'Montserrat', sans-serif;
+  color: #11999E;
+}
+
+a{
+color:  #11999E;
+}
+p{
+  line-height: 2;
+}
+
+hr{
+
+     border-bottom: none;
+     border-top-style:dotted;
+     border-color:grey;
+     border-width: 5px;
+     width: 4%;
+     margin-top: 5%;
+     margin-bottom: 5%;
+
+}
+
+a{
+  text-decoration: none;
+}
+
+
+/* mouse over link */
+a:hover {
+  color:#916dd5 ;
+}
+
+/* selected link */
+a:active {
+  color:#127681;
+}
+
+.ph{
+width: 40%;
+margin: 40px auto 50px;
+}
+
+.programmer{
+font-weight: normal;
+}
+
+.skills{
+  padding: 3%;
+}
+
+.top-container{
+  background-color: #f0e3ff;
+  position: relative;
+  /* this is parent relitive container which is use their child postion inside this.
+  if we not define bydefualt html body is relative*/
+ padding-top: 100px;
+}
+
+.middle-container{
+  padding: 7%;
+}
+
+.intro{
+  width: 50%;
+  margin: auto;
+}
+
+.bottom-container{
+  background-color: #66bfbf;
+  padding: 50px 0 20px;
+}
+
+.cloud-top{
+
+position: absolute;
+right: 200px;
+top: 50px;
+}
+
+.cloud-bottom{
+  position: absolute;/*chid...inside parent*/
+  left: 250px;
+  bottom: 340px
+}
+
+.spanid{
+  text-decoration: underline;
+}
+
+.cpy-right{
+  color: #EAF6F6;
+}
+
+.skill-row{
+
+  margin: 80px auto 50px auto;
+  text-align: left;
+
+}
+
+.chess-img{
+  width: 20%;
+  float: right;
+  margin-left: 10%;
+}
+
+.pad{
+padding-bottom:20%;
+}
+
+.skill-img{
+
+    width: 25%;
+    float: left;
+    line-height: 2;
+    margin-right: 10%;
+}
+
+.contact_me {
+   background: #61D4B3;
+   background-image: -webkit-linear-gradient(top, #61D4B3, #1E62D0);
+   background-image: -moz-linear-gradient(top, #61D4B3, #1E62D0);
+   background-image: -ms-linear-gradient(top, #61D4B3, #1E62D0);
+   background-image: -o-linear-gradient(top, #61D4B3, #1E62D0);
+   background-image: linear-gradient(to bottom, #61D4B3, #1E62D0);
+   -webkit-border-radius: 20px;
+   -moz-border-radius: 20px;
+   border-radius: 20px;
+   font-family: Open Sans;
+   color: #fbf4f9;
+   font-size: 20px;
+   font-weight: 100;
+   padding: 10px;
+   text-shadow: 1px 1px 20px #000000;
+   border: solid #81F5FF 1px;
+   text-decoration: none;
+   display: inline-block;
+   cursor: pointer;
+   text-align: center;
+}
+
+.contact_me:hover {
+   border: solid #337FED 1px;
+   background: #EB1AE8;
+   background-image: -webkit-linear-gradient(top, #EB1AE8, #3D94F6);
+   background-image: -moz-linear-gradient(top, #EB1AE8, #3D94F6);
+   background-image: -ms-linear-gradient(top, #EB1AE8, #3D94F6);
+   background-image: -o-linear-gradient(top, #EB1AE8, #3D94F6);
+   background-image: linear-gradient(to bottom, #EB1AE8, #3D94F6);
+   -webkit-border-radius: 20px;
+   -moz-border-radius: 20px;
+   border-radius: 20px;
+   text-decoration: none;
+}
