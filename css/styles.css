@@ -6,6 +6,9 @@ body{
 .nav-link {
   margin-left: 40px;
 }
+.nav{
+  background-color: #aab2b8;
+}
 .fnt{
   font-family: cursive;
 
