@@ -1,74 +1,170 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Shreyansh Jain</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shreyansh Jain - Data Engineer 💻</title>
   <link rel="stylesheet" href="css/styles.css">
   <link rel="shortcut icon" href="favicon.ico">
-  <!--this link is from google link for google font-->
-  <link
-    href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sacramento&display=swap"
-    rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script> 
-  </head>
-
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #222;
+      padding: 15px 50px;
+    }
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      transition: 0.3s;
+    }
+    .navbar a:hover {
+      background: #f9a826;
+      border-radius: 5px;
+    }
+    .top-container {
+      text-align: center;
+      padding: 100px 20px;
+      background: linear-gradient(to right, #141E30, #243B55);
+      color: white;
+    }
+    .top-container h1 {
+      font-size: 50px;
+    }
+    .top-container span {
+      color: #f9a826;
+    }
+    .middle-container, .skills, .projects, .contact-me {
+      padding: 50px 20px;
+      text-align: center;
+    }
+    .profile img {
+      width: 150px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
+    .skills, .projects {
+      background: #fff;
+    }
+    .skill-row, .project-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 30px;
+    }
+    .skill-row img, .project-item img {
+      width: 120px;
+      margin-right: 20px;
+    }
+    .contact-me {
+      background: #333;
+      color: white;
+    }
+    .contact_me {
+      background: #f9a826;
+      padding: 10px 20px;
+      text-decoration: none;
+      color: white;
+      border-radius: 5px;
+    }
+    .bottom-container {
+      text-align: center;
+      padding: 20px;
+      background: #222;
+      color: white;
+    }
+    .footer-link {
+      color: #f9a826;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+  </style>
+</head>
 <body>
-    <div  style="height: 35px;font-size: 20px">
-   <nav class="navbar navbar-expand-sm bg-warning navbar-dark"  >
-  <a class="nav-link fnt" href="#">Active</a>
-      <a class="nav-link fnt" href="https://docs.google.com/document/d/1a5LmhYrNLOJgdi2mlU4ckaUc5BDp8Z2BocNb1Y3xxI8/edit">Resume</a>
-      <a class="nav-link fnt" href="#">Link</a>
-      <a class="nav-link fnt disabled" href="#">Disabled</a>
-</nav>
-</div>
+  <nav class="navbar">
+    <a href="#">Home 🏠</a>
+    <a href="#projects">Projects 📂</a>
+    <a href="#contact">Contact 📧</a>
+  </nav>
+
   <div class="top-container">
-    <h1 class="heading ek" style="padding-top: 30px;">I'm Shreyansh </h1>
-    <h2 class="programmer">a <span class="spanid">Pro</span>gramer.</h2>
-
-    <img class="mountain" src="images/mountainsss.png" alt="mountainss">
-
+    <h1>I'm Shreyansh 👋</h1>
+    <h2>A Passionate <span>Data Engineer 💻</span></h2>
   </div>
-   <img src="land.svg" alt="">
+
   <div class="middle-container">
     <div class="profile">
       <img src="images/profile-img.png" alt="profile-image">
-      <h2>Hello.</h2>
-      <p class="intro">I am a Full Stack Developer.I'm Student of Computer Science and Information Technology MCA<sup>1nd</sup> year and I ❤️ Tea and Coding.</p>
+      <h2>Hello! 👨‍💻</h2>
+      <p>I am a Data Engineer with expertise in Big Data, Cloud Technologies ☁️, and Data Pipelines 🔄.</p>
     </div>
-    <hr>
-    <div class="skills">
-      <h2>My Skills.</h2>
-      <div class="skill-row">
-        <img class="skill-img" src="images/my-skill.jpg" alt="My Skills">
-        <h3>Front & Back end Development</h3><br>
-        <p>I Starting learn code After Getting Intrest in Computer ScienceS Field and switch commerce stream,i 😍 Java, I am build Own Clone of Twitter and Wikepidia Fetcher in Java,I have gained lot of Great Technological skills in Development and Learn How to Deal with new Tool such as springMVC framework,Database sql,http connection,jquery,ajax,server,json,radis and CDN.</p>
-      </div>
+  </div>
 
-      <div class="skill-row"  class="pad">
-
-        <img class="chess-img" src="images/strategy.png" alt="">
-        <h3>Lover of Games Challeges ):</h3><br>
-        <p>I ❤️ to Play games and takes & accepting challege.it's not matter to me weither i win or loss.I play games as a Real mission.my one of the favourite game is chess and cricket.</p>
-      </div>
+  <div class="skills">
+    <h2>My Skills 🛠️</h2>
+    <div class="skill-row">
+      <img src="images/data-engineering.png" alt="Data Engineering">
+      <h3>Big Data & ETL 🔢</h3>
+      <p>Worked with Hadoop, Spark, Kafka, and built scalable ETL pipelines.</p>
     </div>
-
-    <hr>
-    <div class="contact-me">
-      <h2>Get In Touch</h2>
-      <h3>If you want to play chess with me..</h3>
-      <p class="ph">LOve  chess as much as i am? let's play with me ,i am very much excite to accept challge and i can't tells us how much awesome,we can do party while we playing  chess.</p>
-      <a class="contact_me" href="mailto:Shreyanshjain955@gmail.com">CONTACT ME</a>
+    <div class="skill-row">
+      <img src="images/database.png" alt="Database Management">
+      <h3>Database Management 💾</h3>
+      <p>Proficient in SQL, DB2, PostgreSQL, and NoSQL databases.</p>
     </div>
+    <div class="skill-row">
+      <img src="images/cloud.png" alt="Cloud Technologies">
+      <h3>Cloud & DevOps ☁️🔧</h3>
+      <p>Experience with AWS, GCP, Docker, and Kubernetes.</p>
+    </div>
+  </div>
+
+  <div id="projects" class="projects">
+    <h2>Projects 🚀</h2>
+    <div class="project-item">
+      <img src="images/project1.png" alt="Project 1">
+      <h3>Sales Data Processing with AWS & Big Data 📊</h3>
+      <p>Built an automated ETL pipeline to generate, process, and store large-scale sales data using PySpark, MySQL, and AWS S3.</p>
+    </div>
+    <div class="project-item">
+      <img src="images/project4.png" alt="Project 4">
+      <h3>Distributed Data Warehousing 🏢</h3>
+      <p>Optimized and scaled data warehousing using Apache Hive and Presto for fast analytical querying.</p>
+    </div>
+    <div class="project-item">
+      <img src="images/project2.png" alt="Project 2">
+      <h3>Real-Time Data Pipeline ⚡</h3>
+      <p>Developed a Kafka-Spark pipeline for real-time streaming and transformation of business data.</p>
+    </div>
+    <div class="project-item">
+      <img src="images/project3.png" alt="Project 3">
+      <h3>Power BI Dashboard 📊</h3>
+      <p>Designed an interactive dashboard analyzing SQL query performance and optimizing business insights.</p>
+    </div>
+  </div>
+
+  <div id="contact" class="contact-me">
+    <h2>Get In Touch 📬</h2>
+    <p>Let's discuss data engineering, cloud solutions, or optimizing ETL pipelines.</p>
+    <a class="contact_me" href="mailto:Shreyanshjain955@gmail.com">CONTACT ME 📧</a>
   </div>
 
   <div class="bottom-container">
-    <a class="footer-link" href="https://myaccount.google.com/?gar=1">LinkedIn</a>|
-    <a class="footer-link" href="https://twitter.com/Shreyan10612698">Twitter</a>|
-    <a class="footer-link" href="https://www.facebook.com/profile.php?id=100028273352375">Facebook</a>
-    <p class="cpy-right">© 2022 Shreyansh jain.</p>
+    <a class="footer-link" href="https://linkedin.com/in/shreyansh">LinkedIn 🔗</a>
+    <a class="footer-link" href="https://github.com/shreyansh">GitHub 🧑‍💻</a>
+    <p>© 2025 Shreyansh Jain.</p>
   </div>
-
 </body>
-
 </html>
