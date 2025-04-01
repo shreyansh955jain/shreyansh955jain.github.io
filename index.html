@@ -15,6 +15,8 @@
       margin: 0;
       padding: 0;
       background-color: #f4f4f4;
+      height: 100vh;
+      overflow: hidden;
     }
     .navbar {
       display: flex;
@@ -22,6 +24,7 @@
       align-items: center;
       background: #222;
       padding: 15px 50px;
+      height: 80px;
     }
     .navbar a {
       color: white;
@@ -29,30 +32,31 @@
       padding: 10px 20px;
       transition: 0.3s;
     }
-    .navbar a:hover {
-      background: #f9a826;
-      border-radius: 5px;
-    }
-    .projects {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-      padding: 50px 20px;
-      background: #fff;
-    }
-    .project-item {
-      flex: 1 1 300px;
-      max-width: 400px;
+    .top-container {
       text-align: center;
-      background: #eee;
-      padding: 20px;
-      border-radius: 10px;
+      padding: 100px 20px;
+      background: linear-gradient(to right, #141E30, #243B55);
+      color: white;
+      height: 300px;
+    }
+    .middle-container, .projects, .resume, .contact-me {
+      text-align: center;
+      height: 500px;
+    }
+    .profile img {
+      width: 150px;
+      border-radius: 50%;
     }
     .project-item img {
-      width: 100%;
-      height: auto;
-      border-radius: 5px;
+      width: 150px;
+      height: 150px;
+    }
+    .bottom-container {
+      text-align: center;
+      padding: 20px;
+      background: #222;
+      color: white;
+      height: 100px;
     }
   </style>
 </head>
@@ -67,6 +71,20 @@
   <div class="top-container">
     <h1>I'm Shreyansh 👋</h1>
     <h2>A Passionate <span>Data Engineer 💻</span></h2>
+  </div>
+
+  <div class="middle-container">
+    <div class="profile">
+      <img src="images/profile-img.png" alt="profile-image">
+      <h2>Hello! 👨‍💻</h2>
+      <p>I am a Data Engineer with expertise in Big Data, Cloud Technologies ☁️, and Data Pipelines 🔄.</p>
+    </div>
+  </div>
+
+  <div id="resume" class="resume">
+    <h2>My Resume 📄</h2>
+    <p>Take a look at my resume to learn more about my experience and skills.</p>
+    <a class="resume-btn" href="https://docs.google.com/document/d/1v-caCUMIjmgwXliEFqCO50V0Ok31Y98P-x-uUjuw9bM/export?format=pdf" target="_blank">📥 Download Resume (PDF)</a>
   </div>
 
   <div id="projects" class="projects">
@@ -90,16 +108,6 @@
       <img src="images/project3.png" alt="Project 3">
       <h3>Power BI Dashboard 📊</h3>
       <p>Designed an interactive dashboard analyzing SQL query performance and optimizing business insights.</p>
-    </div>
-    <div class="project-item">
-      <img src="images/project5.png" alt="Project 5">
-      <h3>Machine Learning Model Deployment 🤖</h3>
-      <p>Developed and deployed ML models using Flask and AWS Lambda for predictive analytics.</p>
-    </div>
-    <div class="project-item">
-      <img src="images/project6.png" alt="Project 6">
-      <h3>Automated Data Quality Framework 🏆</h3>
-      <p>Designed an automated data validation framework to ensure high data integrity in ETL pipelines.</p>
     </div>
   </div>
 
