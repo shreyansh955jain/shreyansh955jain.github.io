@@ -18,10 +18,10 @@
     }
     .navbar {
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
       align-items: center;
       background: #222;
-      padding: 15px;
+      padding: 15px 50px;
     }
     .navbar a {
       color: white;
@@ -34,33 +34,25 @@
       border-radius: 5px;
     }
     .projects {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
       gap: 20px;
       padding: 50px 20px;
       background: #fff;
-      text-align: center;
     }
     .project-item {
-      background: #fafafa;
+      flex: 1 1 300px;
+      max-width: 400px;
+      text-align: center;
+      background: #eee;
       padding: 20px;
       border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s;
-    }
-    .project-item:hover {
-      transform: scale(1.05);
     }
     .project-item img {
       width: 100%;
-      max-width: 250px;
       height: auto;
-      border-radius: 10px;
-    }
-    @media (max-width: 768px) {
-      .projects {
-        grid-template-columns: 1fr;
-      }
+      border-radius: 5px;
     }
   </style>
 </head>
@@ -98,6 +90,16 @@
       <img src="images/project3.png" alt="Project 3">
       <h3>Power BI Dashboard 📊</h3>
       <p>Designed an interactive dashboard analyzing SQL query performance and optimizing business insights.</p>
+    </div>
+    <div class="project-item">
+      <img src="images/project5.png" alt="Project 5">
+      <h3>Machine Learning Model Deployment 🤖</h3>
+      <p>Developed and deployed ML models using Flask and AWS Lambda for predictive analytics.</p>
+    </div>
+    <div class="project-item">
+      <img src="images/project6.png" alt="Project 6">
+      <h3>Automated Data Quality Framework 🏆</h3>
+      <p>Designed an automated data validation framework to ensure high data integrity in ETL pipelines.</p>
     </div>
   </div>
 
