@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en">
 <head>
   <meta charset="utf-8">
@@ -46,28 +46,25 @@
     .top-container span {
       color: #f9a826;
     }
-    .middle-container, .skills, .projects, .contact-me {
+    .middle-container, .skills, .projects, .resume, .contact-me {
       padding: 50px 20px;
       text-align: center;
     }
-    .profile img {
-      width: 150px;
-      border-radius: 50%;
-      margin-bottom: 20px;
-    }
-    .skills, .projects {
+    .resume {
       background: #fff;
     }
-    .skill-row, .project-item {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-wrap: wrap;
-      margin-bottom: 30px;
+    .resume-btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background: #f9a826;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: 0.3s;
     }
-    .skill-row img, .project-item img {
-      width: 120px;
-      margin-right: 20px;
+    .resume-btn:hover {
+      background: #e08e24;
     }
     .contact-me {
       background: #333;
@@ -97,6 +94,7 @@
   <nav class="navbar">
     <a href="#">Home 🏠</a>
     <a href="#projects">Projects 📂</a>
+    <a href="#resume">Resume 📄</a>
     <a href="#contact">Contact 📧</a>
   </nav>
 
@@ -112,23 +110,13 @@
       <p>I am a Data Engineer with expertise in Big Data, Cloud Technologies ☁️, and Data Pipelines 🔄.</p>
     </div>
   </div>
-  <div class="skills">
-    <h2>My Skills 🛠️</h2>
-    <div class="skill-row">
-      <img src="images/data-engineering.png" alt="Data Engineering">
-      <h3>Big Data & ETL 🔢</h3>
-      <p>Worked with Hadoop, Spark, Kafka, and built scalable ETL pipelines.</p>
-    </div>
-    <div class="skill-row">
-      <img src="images/database.png" alt="Database Management">
-      <h3>Database Management 💾</h3>
-      <p>Proficient in SQL, DB2, PostgreSQL, and NoSQL databases.</p>
-    </div>
-    <div class="skill-row">
-      <img src="images/cloud.png" alt="Cloud Technologies">
-      <h3>Cloud & DevOps ☁️🔧</h3>
-      <p>Experience with AWS, GCP, Docker, and Kubernetes.</p>
-    </div>
+
+  <div id="resume" class="resume">
+    <h2>My Resume 📄</h2>
+    <p>Take a look at my resume to learn more about my experience and skills.</p>
+    <a class="resume-btn" href="https://docs.google.com/document/d/1v-caCUMIjmgwXliEFqCO50V0Ok31Y98P-x-uUjuw9bM/export?format=pdf" target="_blank">
+      📥 Download Resume (PDF)
+    </a>
   </div>
 
   <div id="projects" class="projects">
@@ -142,16 +130,6 @@
       <img src="images/project4.png" alt="Project 4">
       <h3>Distributed Data Warehousing 🏢</h3>
       <p>Optimized and scaled data warehousing using Apache Hive and Presto for fast analytical querying.</p>
-    </div>
-    <div class="project-item">
-      <img src="images/project2.png" alt="Project 2">
-      <h3>Real-Time Data Pipeline ⚡</h3>
-      <p>Developed a Kafka-Spark pipeline for real-time streaming and transformation of business data.</p>
-    </div>
-    <div class="project-item">
-      <img src="images/project3.png" alt="Project 3">
-      <h3>Power BI Dashboard 📊</h3>
-      <p>Designed an interactive dashboard analyzing SQL query performance and optimizing business insights.</p>
     </div>
   </div>
 
