@@ -60,11 +60,18 @@
       padding: 20px;
       background: #f9f9f9;
       margin-bottom: 30px;
+      transition: transform 0.3s ease;
+    }
+    .project-item:hover {
+      transform: scale(1.05);
     }
     .project-item img {
-      max-width: 100%;
+      width: 100%;
       height: auto;
+      max-height: 250px; /* Limit image height */
+      object-fit: cover; /* Ensures the image fills the container without distortion */
       border-radius: 10px;
+      margin-bottom: 20px; /* Space between image and text */
     }
     .resume {
       text-align: center;
