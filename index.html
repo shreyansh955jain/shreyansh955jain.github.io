@@ -54,28 +54,29 @@
     .project-item {
       display: flex;
       align-items: center;
-      justify-content: center;
+      justify-content: space-between;
       border: 1px solid #ddd;
       border-radius: 10px;
       padding: 20px;
       background: #f9f9f9;
       margin-bottom: 30px;
       transition: transform 0.3s ease;
+      max-width: 1000px;
+      margin-left: auto;
+      margin-right: auto;
     }
-    .project-item:nth-child(odd) {
-      flex-direction: row-reverse;
+    .project-item:hover {
+      transform: scale(1.05);
     }
     .project-item img {
-      width: 40%;
+      width: 45%;
       height: auto;
-      max-height: 250px;
+      max-height: 300px;
       object-fit: cover;
       border-radius: 10px;
-      margin: 0 20px;
     }
-    .project-text {
-      width: 50%;
-      text-align: left;
+    .project-item:nth-child(even) img {
+      order: 2;
     }
     .resume {
       text-align: center;
@@ -91,24 +92,50 @@
       border-radius: 5px;
       margin-top: 10px;
     }
+    .contact-me {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 50px 20px;
+      background: #fff;
+    }
+    .contact-me form {
+      background: #f9f9f9;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 50%;
+      max-width: 500px;
+    }
+    .contact-me input, .contact-me textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    .contact-me button {
+      background: #f9a826;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
     .bottom-container {
       display: flex;
       justify-content: center;
-      gap: 20px;
-      background: #222;
+      align-items: center;
       padding: 20px;
-    }
-    .bottom-container p {
+      background: #222;
       color: white;
-      margin: 0;
     }
     .footer-link {
       color: white;
       text-decoration: none;
-      font-weight: bold;
-    }
-    .footer-link:hover {
-      text-decoration: underline;
+      margin: 0 15px;
     }
   </style>
 </head>
@@ -128,53 +155,39 @@
   <div class="resume" id="resume">
     <h2>My Resume 📄</h2>
     <p>Take a look at my resume to learn more about my experience and skills.</p>
-    <a class="resume-btn" href="https://docs.google.com/document/d/1v-caCUMIjmgwXliEFqCO50V0Ok31Y98P-x-uUjuw9bM/export?format=pdf" target="_blank">
-      📥 Download Resume (PDF)
-    </a>
+    <a class="resume-btn" href="#">📥 Download Resume (PDF)</a>
   </div>
 
   <div id="projects" class="projects">
     <h2>Projects 🚀</h2>
     <div class="project-item">
       <img src="images/project1.png" alt="Project 1">
-      <div class="project-text">
+      <div>
         <h3>Sales Data Processing with AWS & Big Data 📊</h3>
-        <p>Built an automated ETL pipeline to generate, process, and store large-scale sales data using PySpark, MySQL, and AWS S3.</p>
-      </div>
-    </div>
-    <div class="project-item">
-      <img src="images/project4.png" alt="Project 4">
-      <div class="project-text">
-        <h3>Distributed Data Warehousing 🏢</h3>
-        <p>Optimized and scaled data warehousing using Apache Hive and Presto for fast analytical querying.</p>
+        <p>Built an automated ETL pipeline using PySpark, MySQL, and AWS S3.</p>
       </div>
     </div>
     <div class="project-item">
       <img src="images/project2.png" alt="Project 2">
-      <div class="project-text">
+      <div>
         <h3>Real-Time Data Pipeline ⚡</h3>
-        <p>Developed a Kafka-Spark pipeline for real-time streaming and transformation of business data.</p>
+        <p>Developed a Kafka-Spark pipeline for real-time data streaming and transformation.</p>
       </div>
     </div>
     <div class="project-item">
       <img src="images/project3.png" alt="Project 3">
-      <div class="project-text">
+      <div>
         <h3>Power BI Dashboard 📊</h3>
-        <p>Designed an interactive dashboard analyzing SQL query performance and optimizing business insights.</p>
+        <p>Designed an interactive Power BI dashboard analyzing SQL query performance.</p>
       </div>
     </div>
-  </div>
-
-  <div id="contact" class="contact-me">
-    <h2>Get In Touch 📬</h2>
-    <p>Let's discuss data engineering, cloud solutions, or optimizing ETL pipelines.</p>
-    <a class="contact_me" href="mailto:Shreyanshjain955@gmail.com">CONTACT ME 📧</a>
-  </div>
-
-  <div class="bottom-container">
-    <a class="footer-link" href="https://linkedin.com/in/shreyansh">LinkedIn 🔗</a>
-    <a class="footer-link" href="https://github.com/shreyansh">GitHub 🧑‍💻</a>
-    <p>© 2025 Shreyansh Jain.</p>
+    <div class="project-item">
+      <img src="images/project4.png" alt="Project 4">
+      <div>
+        <h3>Distributed Data Warehousing 🏢</h3>
+        <p>Optimized and scaled data warehousing using Apache Hive and Presto.</p>
+      </div>
+    </div>
   </div>
 </body>
 </html>
