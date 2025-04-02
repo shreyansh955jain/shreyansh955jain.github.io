@@ -53,8 +53,8 @@
     }
     .project-item {
       display: flex;
-      flex-direction: column;
       align-items: center;
+      justify-content: center;
       border: 1px solid #ddd;
       border-radius: 10px;
       padding: 20px;
@@ -62,16 +62,20 @@
       margin-bottom: 30px;
       transition: transform 0.3s ease;
     }
-    .project-item:hover {
-      transform: scale(1.05);
+    .project-item:nth-child(odd) {
+      flex-direction: row-reverse;
     }
     .project-item img {
-      width: 100%;
+      width: 40%;
       height: auto;
-      max-height: 250px; /* Limit image height */
-      object-fit: cover; /* Ensures the image fills the container without distortion */
+      max-height: 250px;
+      object-fit: cover;
       border-radius: 10px;
-      margin-bottom: 20px; /* Space between image and text */
+      margin: 0 20px;
+    }
+    .project-text {
+      width: 50%;
+      text-align: left;
     }
     .resume {
       text-align: center;
@@ -86,6 +90,25 @@
       color: white;
       border-radius: 5px;
       margin-top: 10px;
+    }
+    .bottom-container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      background: #222;
+      padding: 20px;
+    }
+    .bottom-container p {
+      color: white;
+      margin: 0;
+    }
+    .footer-link {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .footer-link:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
@@ -114,23 +137,31 @@
     <h2>Projects 🚀</h2>
     <div class="project-item">
       <img src="images/project1.png" alt="Project 1">
-      <h3>Sales Data Processing with AWS & Big Data 📊</h3>
-      <p>Built an automated ETL pipeline to generate, process, and store large-scale sales data using PySpark, MySQL, and AWS S3.</p>
+      <div class="project-text">
+        <h3>Sales Data Processing with AWS & Big Data 📊</h3>
+        <p>Built an automated ETL pipeline to generate, process, and store large-scale sales data using PySpark, MySQL, and AWS S3.</p>
+      </div>
     </div>
     <div class="project-item">
       <img src="images/project4.png" alt="Project 4">
-      <h3>Distributed Data Warehousing 🏢</h3>
-      <p>Optimized and scaled data warehousing using Apache Hive and Presto for fast analytical querying.</p>
+      <div class="project-text">
+        <h3>Distributed Data Warehousing 🏢</h3>
+        <p>Optimized and scaled data warehousing using Apache Hive and Presto for fast analytical querying.</p>
+      </div>
     </div>
     <div class="project-item">
       <img src="images/project2.png" alt="Project 2">
-      <h3>Real-Time Data Pipeline ⚡</h3>
-      <p>Developed a Kafka-Spark pipeline for real-time streaming and transformation of business data.</p>
+      <div class="project-text">
+        <h3>Real-Time Data Pipeline ⚡</h3>
+        <p>Developed a Kafka-Spark pipeline for real-time streaming and transformation of business data.</p>
+      </div>
     </div>
     <div class="project-item">
       <img src="images/project3.png" alt="Project 3">
-      <h3>Power BI Dashboard 📊</h3>
-      <p>Designed an interactive dashboard analyzing SQL query performance and optimizing business insights.</p>
+      <div class="project-text">
+        <h3>Power BI Dashboard 📊</h3>
+        <p>Designed an interactive dashboard analyzing SQL query performance and optimizing business insights.</p>
+      </div>
     </div>
   </div>
 
