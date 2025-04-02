@@ -75,9 +75,6 @@
       object-fit: cover;
       border-radius: 10px;
     }
-    .project-item:nth-child(even) img {
-      order: 2;
-    }
     .resume {
       text-align: center;
       padding: 50px 20px;
@@ -154,11 +151,10 @@
 
   <div class="resume" id="resume">
     <h2>My Resume 📄</h2>
-    <p>Take a look at my resume to learn more about my experience and skills.</p>
-    <a class="resume-btn" href="#">📥 Download Resume (PDF)</a>
+    <a class="resume-btn" href="https://docs.google.com/document/d/1v-caCUMIjmgwXliEFqCO50V0Ok31Y98P-x-uUjuw9bM/edit?usp=sharing" target="_blank">📥 Download Resume (PDF)</a>
   </div>
 
-  <div id="projects" class="projects">
+  <div class="projects" id="projects">
     <h2>Projects 🚀</h2>
     <div class="project-item">
       <img src="images/project1.png" alt="Project 1">
@@ -190,22 +186,19 @@
     </div>
   </div>
 
-  <div id="contact" class="contact-me">
-    <h2>Get In Touch 📬</h2>
-    <p>Let's discuss data engineering, cloud solutions, or optimizing ETL pipelines.</p>
-    <form>
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea placeholder="Your Message" rows="5" required></textarea>
+  <div class="contact-me" id="contact">
+    <h2>Contact Me 📧</h2>
+    <form action="https://formspree.io/f/shreyanshjain955@gmail.com" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
       <button type="submit">Send Message</button>
     </form>
   </div>
 
   <div class="bottom-container">
-    <a class="footer-link" href="https://linkedin.com/in/shreyansh">LinkedIn 🔗</a>
-    <a class="footer-link" href="https://github.com/shreyansh">GitHub 🧑‍💻</a>
-    <p>© 2025 Shreyansh Jain.</p>
+    <a class="footer-link" href="https://github.com/shreyansh955jain" target="_blank">GitHub</a>
+    <a class="footer-link" href="https://www.linkedin.com/in/shreyansh-jain-0a279b1ab/" target="_blank">LinkedIn</a>
   </div>
-
 </body>
 </html>
